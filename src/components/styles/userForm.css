@@ -1,0 +1,82 @@
+.userform {
+    background-color: #99999955;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scale(0);
+    transition: transform .5s;
+}
+.userform.active {
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.userform_form {
+    background-color: rgb(24, 24, 85);
+    padding: 20px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.userform_header {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.userform_btnclose {
+    background-color: rgb(252, 18, 18) ;
+    color: rgb(251, 249, 249);
+    font-family: monospace;
+    font-size: 19px;
+    font-weight: 700 ;
+    padding: 0 8px;
+    max-height: 25px;
+    
+    transition: transform .5s
+    filter .5s;
+    border-radius: 30%
+}
+.userform_btnclose:hover {
+    transform: scale(1.1);
+    filter: brightness(1.25);
+    transition: transform .5s
+                filter .5s;
+}
+
+.userform_item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.userform_btnadd {
+    background-color: rgb(89, 138, 45) ;
+    color: rgb(251, 249, 247);
+    font-family: monospace;
+    font-size: 17px;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 8px rgba(206, 202, 202, 0.507);
+
+    transition: transform .5s
+    filter .5s;
+}
+.userform_btnadd:hover {
+    transform: scale(1.05);
+    filter: brightness(1.25);
+    transition: transform .5s
+                filter .5s;
+}
+
