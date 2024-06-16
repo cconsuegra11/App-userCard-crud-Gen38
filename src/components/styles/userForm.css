@@ -1,4 +1,5 @@
 .userform {
+    z-index: 100;
     background-color: #99999955;
     position: fixed;
     top: 0;
